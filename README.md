@@ -37,9 +37,11 @@ The original dataset was published in a study by Charytanowicz et al. (2010) and
   - README.md
  
 ```
-├── data
-│ ├── data1.csv
-│ ├── data2.csv
+├── main
+│ ├── data
+│   ├── seed_dataset.txt
+│ ├── notebook
+│   ├── kmeans_comparison.ipynb
 │ └── cleanedData
 │ ├── cleaneddata1.csv
 │ └── cleaneddata2.csv
