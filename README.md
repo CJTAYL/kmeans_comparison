@@ -15,7 +15,7 @@ The purpose of the project was to compare implementations of k-means clustering 
 The data used in this project were retrieved from the University of California Irvines Machine Learning Repository. The data can be accessed through a .txt file located in the "data" folder of this repository. Additionally, the data may be accessed through the `fetch_seeds_data` function in the "data_collection.py" file. The original dataset was published in a study by Charytanowicz et al. (2010) and contains information on the geometric properties of 210 wheat seeeds. The variables in the dataset were:
 - Area (A)
 - Perimeter (P)
-- Compactness (C), where 
+- Compactness (C), where C = $$\frac{4 pi A}{P^2}$$
 - Length of Kernel
 - Width of Kernel
 - Assymmetry Coefficient
