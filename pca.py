@@ -8,12 +8,15 @@ def conduct_pca(var, df_scaled):
 
     Parameters
     ----------
-    var: percentage of variance
-    df: scaled dataframe
+    var: float
+        Percentage of variance
+    df: dataframe
+        Scaled dataframe
 
     Returns
     ----------
-    reduced_features: dataframe with principal components
+    reduced_features: dataframe
+        Dataframe containing the principal components
     """
     pca = PCA(n_components=var)
     reduced_features = pca.fit_transform(df_scaled)
