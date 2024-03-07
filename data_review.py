@@ -7,11 +7,13 @@ def get_info(df):
 
     Parameters
     ----------
-    df: Dataframe
+    df: dataframe
+        Dataframe of features
 
     Returns
     ----------
-    Print out of information about the dataframe
+    None
+        Prints summry of dataframe
     """
     print('-------------------------')
     print('Dataframe Info')
@@ -30,7 +32,8 @@ def get_statistics(df):
 
     Returns
     ----------
-    full_stats: Descriptive statistics + skewness + kurtosis
+    full_stats: dataframe
+        Dataframe of descriptive statistics + skewness + kurtosis numeric variables
     """
     desc_stats = df.describe()
     skewness_df = pd.DataFrame(df.skew(numeric_only=True), columns=['skew']).T
