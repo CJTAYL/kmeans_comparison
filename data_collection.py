@@ -1,9 +1,19 @@
-# Data collection
 import pandas as pd
 
-raw_url = 'https://raw.githubusercontent.com/CJTAYL/USL/main/seeds_dataset.txt'
+raw_url = 'https://raw.githubusercontent.com/CJTAYL/kmeans_comparison/main/data/seeds_dataset.txt'
 
-def fetch_data():
+def fetch_seeds_data():
+    """
+    Function to retrieve seeds dataset from GitHub repository
+
+    Parameters
+    ----------
+    None:
+
+    Returns
+    Dataframe: dataframe
+        Dataframe containing information about the geometric properties of three varieties of wheat seeds
+    """
     # Use pandas to read text file with whitespace delimiter
     try:
         df = pd.read_csv(raw_url, delim_whitespace=True, header=None)
