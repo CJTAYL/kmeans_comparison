@@ -22,5 +22,4 @@ The data used in this project were retrieved from the University of California I
 - Length of Kernerl Groove
 - Seed Variety (i.e., Kama, Rosa, or Canadian)
 
-$$ C = \frac{4 pi A}{P^2} $$
-$ C = \frac{a}{b}$
+$$\frac{a}{b}$$
