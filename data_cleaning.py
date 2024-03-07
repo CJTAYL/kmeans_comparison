@@ -6,6 +6,16 @@ import pandas as pd
 def separate_ground_truth(df):
     """
     Function to separate ground truth from dataframe
+
+    Parameters
+    ----------
+    df: dataframe
+        Dataframe containing true labels of groups (clusters)
+
+    Returns
+    ----------
+    ground_truth: array-like, (n_samples,)
+        Array containing the true labels for each data point
     """
     ground_truth = df['variety']
     return ground_truth
@@ -14,6 +24,16 @@ def separate_ground_truth(df):
 def scale_data(df):
     """
     Function to scale numerical data
+
+    Parameters
+    ----------
+    df: dataframe
+        Dataframe containing true labels of groups (clusters)
+
+    Returns
+    ----------
+    df_scaled: dataframe
+        Dataframe containing scaled values of numeric variables
     """
     numeric_columns = df.select_dtypes(include=['float64', 'int']).columns
     categorical_columns = df.select_dtypes(exclude=['float64', 'int']).columns
