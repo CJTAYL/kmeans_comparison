@@ -16,7 +16,7 @@ The data used in this project were retrieved from the University of California I
 - Area:
 - Length:
 - Width:
-- Compactness: $C = 4/piA / P^2 $
+- Compactness: $C = \frac{4piA}{P^2} $
 - Perimeter:
 - Kernel Groove:
 - Variety: 
