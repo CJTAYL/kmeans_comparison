@@ -1,5 +1,5 @@
 # Main script
-from data_collection import fetch_data
+from data_collection import fetch_seeds_data
 from data_review import get_info, get_statistics
 from data_cleaning import separate_ground_truth, scale_data
 from pca import conduct_pca
@@ -7,7 +7,7 @@ from kmeans import implement_kmeans, get_centroids, get_labels
 from evaluation import calculate_metrics
 
 def main():
-    data = fetch_data()
+    data = fetch_seeds_data()
     # Info about dataframe and features
     get_info(data)
     get_statistics(data)
