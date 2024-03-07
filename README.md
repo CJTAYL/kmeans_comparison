@@ -4,7 +4,7 @@
 
 ## Description
 
-This project was completed in partial fulfillment of DTSA 5510 Introduction to Unsupervised Learning at the University of Colorado at Boulder.
+This project was completed in partial fulfillment of the requirements for DTSA 5510 Introduction to Unsupervised Learning at the University of Colorado at Boulder.
 
 The purpose of the project was to compare implementations of k-means clustering informed by an elbow plot and a silhouette score. Prior to conducting the comparison, an exploratory data analysis was conducted and the data were cleaned and transformed as appropriate. 
 
@@ -19,4 +19,6 @@ The data used in this project were retrieved from the University of California I
 - Length:
 - Width:
 - Compactness:
-- Perimeter
+- Perimeter:
+- Kernel Groove:
+- Variety: 
