@@ -27,32 +27,26 @@ The original dataset was published in a study by Charytanowicz et al. (2010) and
 - Seed Variety (i.e., Kama, Rosa, or Canadian)
 
 ## Structure of Repository 
-- /main
-  - /data
-    -  seeds_dataset.txt
-  - /notebook
-    - kmeans_comparison.ipynb
-  - LICENSE
-  - Python.gitignore
-  - README.md
- 
+
 ```
-├── main
-│ ├── data
+├── data
 │   ├── seed_dataset.txt
-│ ├── notebook
+├── notebook
 │   ├── kmeans_comparison.ipynb
-│ └── cleanedData
-│ ├── cleaneddata1.csv
-│ └── cleaneddata2.csv
-├── data_acquisition.py
-├── data_preprocessing.ipynb
-├── data_analysis.ipynb
-├── data_modelling.ipynb
-├── Img
-│ ├── img1.png
-│ └── Headerheader.jpg
-├── LICENSE
+├── Python.gitignore
 ├── README.md
-└── .gitignore
+├── data_cleaning.py
+├── data_collection.py
+├── data_review.py
+├── evaluation.py
+├── kmeans.py
+├── main.py
+├── pca.py
+└── requirements.txt
 ```
+## Results and Evaluation
+
+## References
+
+## License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
