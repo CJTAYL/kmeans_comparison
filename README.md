@@ -1,6 +1,6 @@
 # Comparison of Methods to Inform K-Means Clustering: A Brief Tutorial
 
-[Article in Towards Data Science describing the project](https://medium.com/towards-data-science/comparison-of-methods-to-inform-k-means-clustering-a830cdc8db50)
+The code created for this projected was used to create a [tutorial](https://medium.com/towards-data-science/comparison-of-methods-to-inform-k-means-clustering-a830cdc8db50) that was published in Towards Data Science.
 
 ## Description
 
@@ -16,7 +16,7 @@ The project was completed using Python 3.10 and included the following packages:
 
 The data used in this project were retrieved from the University of California Irvines Machine Learning Repository. The data can be accessed through a .txt file located in the "data" folder of this repository. Additionally, the data may be accessed through the `fetch_seeds_data` function in the `data_collection.py` file. 
 
-The original dataset was published in a study by Charytanowicz et al. (2010) and contains information on the geometric properties of 210 wheat seeeds measured in millimeters. The variables in the dataset were:
+The original dataset was published in a study by Charytanowicz et al. (2010) [1] and contains information on the geometric properties of 210 wheat seeeds measured in millimeters. The variables in the dataset were:
 - Area (A)
 - Perimeter (P)
 - Compactness (C), where C = $\frac{4 pi A}{P^2}$
@@ -46,7 +46,11 @@ The original dataset was published in a study by Charytanowicz et al. (2010) and
 ```
 ## Results and Evaluation
 
+The results of the project indicated that the implementation informed by the silhouette score performed better on the internal metrics and the elbow plot performed better on the external metric. 
+
 ## References
+
+[1] Ch
 
 ## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
