@@ -1,6 +1,8 @@
 # Comparison of Methods to Inform K-Means Clustering: A Brief Tutorial
 
-![image](https://github.com/CJTAYL/kmeans_comparison/assets/64110892/cb9dc5a1-25fa-4258-9f58-526895ebba15){width=6, height=6}
+![image](https://github.com/CJTAYL/kmeans_comparison/assets/64110892/cb9dc5a1-25fa-4258-9f58-526895ebba15)
+
+<img src='https://github.com/CJTAYL/kmeans_comparison/assets/64110892/cb9dc5a1-25fa-4258-9f58-526895ebba15' width='200' height='100' />
 
 The code created for this projected was used to create a [tutorial](https://medium.com/towards-data-science/comparison-of-methods-to-inform-k-means-clustering-a830cdc8db50) that was published in Towards Data Science.
 
