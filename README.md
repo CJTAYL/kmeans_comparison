@@ -42,15 +42,32 @@ The original dataset was published in a study by Charytanowicz et al. (2010) [1]
 ├── kmeans.py
 ├── main.py
 ├── pca.py
+├── seeds_EDA.ipynb
 └── requirements.txt
 ```
+
 ## Results and Evaluation
 
-The results of the project indicated that the implementation informed by the silhouette score performed better on the internal metrics and the elbow plot performed better on the external metric. 
+The metrics used to compare the implementations of k-means clustering include internal metrics (e.g., Davies-Bouldin, Calinski-Harabasz) which do not include ground truth labels and external metrics (e.g., Adjusted Rand Index) which do include external metrics. A brief description of the three metrics is provided below.
+
+- Davies-Bouldin Index (DBI): The DBI captures the trade-off between cluster compactness and the distance between clusters. Lower values of DBI indicate there are tighter clusters with more separation between clusters [2].
+- Calinski-Harabasz Index (CHI): The CHI measures cluster density and distance between clusters. Higher values indicate that clusters are dense and well-separated [3].
+- Adjusted Rand Index (ARI): The ARI measures agreement between cluster labels and ground truth. The values of the ARI range from -1 to 1. A score of 1 indicates perfect agreement between labels and ground truth; a scores of 0 indicates random assignments; and a score of -1 indicates worse than random assignment [4].
+
+When comparing the two implementations, k-means informed by the silhouette score performed best on the two internal metrics, indicating more compact and separated clusters. However, k-means informed by the elbow plot performed best on the external metric (i.e., ARI) which indicating better alignment with the ground truth labels. 
+
+Ultimately, the best performing implementation will be determined by the task. If the task requires clusters that are cohesive and well-separated, then internal metrics (e.g., DBI, CHI) might be more relevant. If the task requires the clusters to align with the ground truth labels, then external metrics, like the ARI, may be more relevant.
 
 ## References
 
-[1] Ch
+[1] Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P.A., Łukasik, S., & Zak, S. (2010). Complete Gradient Clustering Algorithm for Features Analysis of X-Ray Images.
+
+[2] D. L. Davies, D.W. Bouldin, A Cluster Separation Measure (1979), IEEE Transactions on Pattern Analysis and Machine Intelligence https://doi:10.1109/TPAMI.1979.4766909
+
+[3] T. Caliński, J. Harabasz, A Dendrite Method for Cluster Analysis (1974) Communications in Statistics https://doi:10.1080/03610927408827101
+
+[4] N. X. Vinh, J. Epps, J. Bailey, Information Theoretic Measures for Clusterings Comparison: Variants, Properties, Normalization and Correction for Chance (2010), Journal of Machine Learning Research https://www.jmlr.org/papers/volume11/vinh10a/vinh10a.pdf
+
 
 ## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
