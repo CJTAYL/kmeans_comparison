@@ -1,5 +1,7 @@
 # Comparison of Methods to Inform K-Means Clustering: A Brief Tutorial
 
+![image](https://github.com/CJTAYL/kmeans_comparison/assets/64110892/cb9dc5a1-25fa-4258-9f58-526895ebba15)
+
 The code created for this projected was used to create a [tutorial](https://medium.com/towards-data-science/comparison-of-methods-to-inform-k-means-clustering-a830cdc8db50) that was published in Towards Data Science.
 
 ## Description
@@ -42,8 +44,8 @@ The original dataset was published in a study by Charytanowicz et al. (2010) [1]
 ├── kmeans.py
 ├── main.py
 ├── pca.py
-├── seeds_EDA.ipynb
-└── requirements.txt
+├── requirements.txt
+└── seeds_EDA.ipynb
 ```
 
 ## Results and Evaluation
